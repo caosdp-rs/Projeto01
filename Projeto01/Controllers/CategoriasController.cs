@@ -73,6 +73,7 @@ namespace Projeto01.Controllers
         public ActionResult Delete(long id)
         {
             return View(categorias.Where(m => m.CategoriaID == id).First());
+            //hello
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
